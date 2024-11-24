@@ -278,7 +278,8 @@ const Home = () => {
     <div
       style={{
         backgroundColor: theme.primary,
-        height: "100vh",
+        minHeight: "100vh",
+        paddingBottom: 50
       }}
     >
       <div
@@ -291,7 +292,7 @@ const Home = () => {
           paddingRight: 20,
         }}
       >
-        <div style={{ maxWidth: "100%" }}>
+        <div style={{ maxWidth: "100%" , overflowY: "auto",}}>
           <h2 style={{ color: theme.secondary }}>Contact Management Portal</h2>
           {searchAddContactGrid()}
           {searchedText && (
